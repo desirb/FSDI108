@@ -1,0 +1,24 @@
+
+<div class="row">
+
+    <div class="d-none d-sm-block col-sm-12 col-md-8 col-xl-9 big-image">
+        <img src="https://picsum.photos/00">
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-xl-3 form">
+        
+        <div *ngIf="loginError" class="alert alert-danger mt-5 mb-n-5">
+            Invalid credentials. Please verify
+        </div>
+        
+        <h1>Welcome</h1>
+
+        
+
+        <input [(ngModel)]="email" name="email" type="text" placeholder="email">
+
+        <input [(ngModel)]="password" name="password" type="text" placeholder="passoword">
+
+        <button (click)="login()" class="btn btn-info">Login</button>
+    </div>
+</div>

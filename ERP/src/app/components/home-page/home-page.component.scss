@@ -1,0 +1,107 @@
+.page-content{
+    max-width: 70%;
+    margin: auto;
+    border: 2px solid rgb(97, 95, 95);
+    border-radius: 8px;
+}
+
+.card-main{
+    background-color: rgba(241, 245, 253, 0.486);
+}
+
+.card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+img{
+    opacity: 30;
+}
+
+.card-title-main{
+    color: white;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.title-text{
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+    font-size: 150%;
+    width: 60%;
+    margin-top: 8%;
+}
+
+button{
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    font-size: 100%;
+    margin-top: 8%;
+    border-radius: 1.1rem;
+    padding: .8%;
+    color: white;
+    background-color: rgba(68, 184, 204, 0.849);
+    border-color: white;
+}
+
+.review{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+
+.review-name{
+    display: inline;
+    margin-right: 5%;
+}
+
+.stars{
+    margin-left: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.icons{
+    width: 40%;
+}
+
+.card-deck{
+    border: none;
+}
+
+.icon-box{
+    text-align: center;
+    
+}
+
+.icon-one{
+    padding-right: 3%;
+}
+
+.icon-two{
+    padding-right: 3%;
+}
+
+.icon-text{
+    font-weight: 400;
+    font-size: 100%;
+    color: rgb(43, 41, 41);
+}
+
+.card-deck{
+    width: 95%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.d-block{
+    height: 45rem;
+}

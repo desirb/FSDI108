@@ -1,0 +1,26 @@
+<div class="content">
+<h1 class="title">Temperature Converter</h1>
+
+
+<div class="farenheit">
+    <label>Farenheit</label>
+    <input type="number" [(ngModel)]="farenheit" (ngModelChange)="convertFromF()">
+    <!-- <button (click)="convertFromF()">Convert &#176; Farenheit to Celsius</button> -->
+</div>
+
+<div class="celsius">
+    <label>Celsius</label>
+    <input type="number" [(ngModel)]="celsius" (ngModelChange)="convertFromC()">
+    <!-- <button (click)="convertFromC()">Convert Celsius to Farenehit</button> -->
+</div>
+
+<div class="kelvin">
+    <label>Kelvin</label>
+    <input type="number" [(ngModel)]="kelvin" (ngModelChange)="convertFromK()">
+    <!-- <button (click)="convertFromK()">Convert Celsius to Farenehit</button> -->
+</div>
+
+</div>
+
+
+

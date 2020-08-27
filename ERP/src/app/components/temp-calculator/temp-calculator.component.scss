@@ -1,0 +1,30 @@
+.farenheit, .celsius, .kelvin {
+    display: inline-block;
+    width: 300px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(131, 127, 127);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 7px rgb(92, 85, 85);
+}
+
+button{
+    margin-top: 10px;
+}
+
+.content{
+    text-align: center;
+    border: 2px solid black;
+}
+
+label{
+    color: darkgreen;
+}

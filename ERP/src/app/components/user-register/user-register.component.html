@@ -1,0 +1,99 @@
+
+
+
+    <form class="card">
+        <div class="card-body">
+        <h1>Create your account</h1> 
+        <div class="form-group row">
+            <label class="col-sm-5">First Name</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.firstName" type="text" size="35"   name="firstName"> 
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Last Name</label>
+            <div class="col-sm-7 input-box">
+                <input [(ngModel)]="model.lastName" type="text" size="35" name="lastName">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Full Address</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.fullAddress" type="text" size="35" name="fullAddress" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Employee Number</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.employeeNumber" type="text" size="35" name="employeeNumber" placeholder="Required" >  
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">ID Number</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.id" type="text" size="35" name="id" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Email</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.email" type="text" size="35" name="email" placeholder="Required" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Username</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.userName" type="text" size="35" name="userName" placeholder="Required" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Password</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.password" type="text" size="35" name="password" placeholder="Required" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Re-type Password</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="retypePassword" type="text" size="35" name="retypePassword" placeholder="Required" >
+            </div>
+        </div>
+
+        <div *ngIf="this.model.password != retypePassword" class="alert alert-danger">
+            Passwords do not match.
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Security Question</label>
+            <div class="col-sm-7">
+                <input [(ngModel)]="model.securityQuestion" type="text" size="35" name="securityQuestion" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-5">Security Question Answer</label>
+            <div class="col-sm-7">
+            <input [(ngModel)]="model.securityQuestionAnswer" type="text" size="35" name="securityQuestionAnswer" >
+            </div>
+        </div>
+
+        <div *ngIf="showAlert" class="alert alert-success">
+            The user has been registered successfully!
+        </div>
+
+        <button [disabled]="shouldSaveDisable()" (click)="saveUser()" type="" class="btn btn-primary">Sign Up</button>
+    </div>
+        <footer>
+        <p></p>
+    </footer>
+    </form>
+
+    
